@@ -6,7 +6,7 @@ from scipy.stats import norm
 sns.set(style='whitegrid')
 
 # サンプルサイズ
-n_values = [10, 100, 1000, 10000]
+n_values = [10, 100, 10000, 100000]
 num_samples = 10000
 
 # 結果を可視化する
