@@ -33,6 +33,6 @@ for i, n in enumerate(n_values):
     ax.set_title(f"n = {n}")
     ax.legend()
 
-plt.suptitle("分布収束: Z_n = X_n * Y_n が N(0, 1/n) に近づく様子（Slutsky の定理）", fontsize=14)
+plt.suptitle("Z_n = X_n * Y_n → N(0, 1/n)", fontsize=14)
 plt.tight_layout()
 plt.show()
