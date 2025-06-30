@@ -14,7 +14,7 @@ fig, axes = plt.subplots(1, len(n_values), figsize=(16, 4))
 
 for i, n in enumerate(n_values):
     # X_n ~ N(0, 1/n)
-    X_n = np.random.normal(loc=0, scale=1/np.sqrt(n), size=num_samples)
+    X_n = np.random.normal(loc=0, scale=1/np.sqrt(n), size=num_samples) # 生成する乱数列の要素数（サンプル数）を num_samples に指定。
 
     # Y_n ~ 1 + noise（確率収束する定数）
     Y_n = 1 + np.random.normal(loc=0, scale=1/np.sqrt(n), size=num_samples)
