@@ -6,13 +6,13 @@ from scipy.stats import norm
 sns.set(style='whitegrid')
 
 # サンプルサイズ
-n_values = [10, 100, 10000, 100000] # 標本サイズ（サンプルサイズ）。理論上の漸近性（n → ∞）を確認するときの変数。
+sample_sizes = [10, 100, 10000, 100000] # 標本サイズ（サンプルサイズ）。理論上の漸近性（n → ∞）を確認するときの変数。
 num_trials = 10000 # 各 n で生成する乱数列の長さ（シミュレーションのサンプルサイズ）を指定する。反復実験の回数。
 
 # 結果を可視化する
-fig, axes = plt.subplots(1, len(n_values), figsize=(16, 4))
+fig, axes = plt.subplots(1, len(sample_sizes), figsize=(16, 4))
 
-for i, n in enumerate(n_values):
+for i, n in enumerate(sample_sizes):
     # X_n ~ N(0, 1/n)
     X_n = np.random.normal(loc=0, scale=1/np.sqrt(n), size=num_trials) # 生成する乱数列の要素数（サンプル数）を num_samples に指定。
 
