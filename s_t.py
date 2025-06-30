@@ -7,7 +7,7 @@ sns.set(style='whitegrid')
 
 # サンプルサイズ
 n_values = [10, 100, 10000, 100000]
-num_samples = 10000
+num_samples = 10000 # 各 n で生成する乱数列の長さ（シミュレーションのサンプルサイズ）を指定する
 
 # 結果を可視化する
 fig, axes = plt.subplots(1, len(n_values), figsize=(16, 4))
