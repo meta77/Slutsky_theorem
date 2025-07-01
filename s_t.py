@@ -9,7 +9,7 @@ sns.set(style='whitegrid')
 sample_sizes = [10, 100, 10000, 100000] # 標本サイズ（サンプルサイズ）。理論上の漸近性（n → ∞）を確認するときの変数。
 num_trials = 10000 # 各nで生成する乱数列の長さ（シミュレーションのサンプルサイズ）を指定する。反復実験の回数。
 
-# 結果を可視化する
+# 結果の可視化
 fig, axes = plt.subplots(1, len(sample_sizes), figsize=(16, 4))
 
 for i, n in enumerate(sample_sizes):
